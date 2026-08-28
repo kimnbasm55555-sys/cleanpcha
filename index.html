@@ -1228,6 +1228,7 @@ async function submitForm(e){
   const btn=e.target.querySelector('.submit');
   if(document.getElementById('botcheck').checked) return false;
   const data={
+    sheet:'청소상담',
     type:ftype.options[ftype.selectedIndex].text,
     name:fname.value.trim(), phone:fphone.value.trim(),
     region:fregion.value.trim(), message:fmsg.value.trim()
